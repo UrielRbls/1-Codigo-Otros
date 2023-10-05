@@ -1,8 +1,8 @@
-const baseEndpoint = 'https://api.github.com';
-const usersEndpoint = `${baseEndpoint}/users`;
-const n = document.querySelector('.name');
-const b = document.querySelector('.blog');
-const l = document.querySelector('.location');
+const baseEndpoint = 'https://api.github.com'; //Api de github 
+const usersEndpoint = `${baseEndpoint}/users`; //Concatena la api de github usando /user para ingresar a la pagina 
+const n = document.querySelector('.name'); //Clase llamada en html, signo $ eliminado 
+const b = document.querySelector('.blog'); //Se corrige nombre de variable de acuerdo a clase html
+const l = document.querySelector('.location'); //Variable corregida y clase creada en html
 
 async function displayUser(username) {
   n.textContent = 'cargando...';

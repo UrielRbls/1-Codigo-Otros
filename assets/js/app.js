@@ -9,9 +9,9 @@ async function displayUser(username) {
   const response = await fetch(`${usersEndpoint}/${username}`);
   const data = await response.json ();
   console.log(data);
-  n.textContent = '${data.name}';
-  b.textContent = '${data.blog}';
-  l.textContent = '${data.location}';
+  n.textContent = `${data.name}`;
+  b.textContent = `${data.blog}`;
+  l.textContent = `${data.location}`;
 }
 
 function handleError(err) {
